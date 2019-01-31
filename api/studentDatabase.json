@@ -1,0 +1,86 @@
+{
+    "students": [
+      {
+        "name": "Alyson Kunsman",
+        "instrument": "Piano",
+        "home": "true",
+        "lesson-length" : 45,
+        "payments": [
+            {
+                "date": "1/21/19",
+                "method": "cash",
+                "amount": 45
+            }
+        ],
+        "notesArray":[
+            {
+                "date": "1/21/19",
+                "notes": "1. Exercise: keep fingers curved. 2. Book page 26-28. 3. Chord Sheet, apply to 'Always Remember...'"
+            }
+        
+        ]
+      },
+      {
+        "name": "Rudi Wilhoite",
+        "instrument": "piano",
+        "home": "true",
+        "lesson-length" : 45,
+        "payments": [
+            {
+                "date": "1/29/19",
+                "method": "cash",
+                "amount": 45
+            }
+        ],
+        "notesArray":[
+            {
+                "date": "1/29/19",
+                "notes": "1. Exercise: keep on working on steadiness. Jingle Bells, pg 30 of book"
+            },
+            {
+                "date": "1/21/19",
+                "notes": "1. Exercise: practice and keep fingers curved. 2. Practice basic chord progression"
+            }
+        ]
+      },
+      {
+        "name": "Corbette Jackson",
+        "instrument": "piano",
+        "home": "true",
+        "lesson-length" : 45,
+        "payments": [
+            {
+                "date": "1/23/19",
+                "method": "cash",
+                "amount": 135
+            }
+        ],
+        "notesArray":[
+            {
+                "date": "1/29/19",
+                "notes": "1. Exercise: keep on working on steadiness. Jingle Bells, pg 30 of book"
+            }
+        ]
+      },
+      {
+        "name": "Alyson Trudan",
+        "instrument": "Guitar",
+        "home": "true",
+        "lesson-length" : 30,
+        "payments": [
+            {
+                "date": "1/30/19",
+                "method": "venmo",
+                "amount": 30
+            }
+        ],
+        "notesArray":[
+            {
+                "date": "1/29/19",
+                "notes": "1. Exercise: keep on working on steadiness. Jingle Bells, pg 30 of book"
+            }
+        ]
+      }
+
+    ]
+  }
