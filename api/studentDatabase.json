@@ -1,86 +1,152 @@
 {
-    "students": [
-      {
-        "name": "Alyson Kunsman",
-        "instrument": "Piano",
-        "home": "true",
-        "lesson-length" : 45,
-        "payments": [
-            {
-                "date": "1/21/19",
-                "method": "cash",
-                "amount": 45
-            }
-        ],
-        "notesArray":[
-            {
-                "date": "1/21/19",
-                "notes": "1. Exercise: keep fingers curved. 2. Book page 26-28. 3. Chord Sheet, apply to 'Always Remember...'"
-            }
-        
-        ]
-      },
-      {
-        "name": "Rudi Wilhoite",
-        "instrument": "piano",
-        "home": "true",
-        "lesson-length" : 45,
-        "payments": [
-            {
-                "date": "1/29/19",
-                "method": "cash",
-                "amount": 45
-            }
-        ],
-        "notesArray":[
-            {
-                "date": "1/29/19",
-                "notes": "1. Exercise: keep on working on steadiness. Jingle Bells, pg 30 of book"
-            },
-            {
-                "date": "1/21/19",
-                "notes": "1. Exercise: practice and keep fingers curved. 2. Practice basic chord progression"
-            }
-        ]
-      },
-      {
-        "name": "Corbette Jackson",
-        "instrument": "piano",
-        "home": "true",
-        "lesson-length" : 45,
-        "payments": [
-            {
-                "date": "1/23/19",
-                "method": "cash",
-                "amount": 135
-            }
-        ],
-        "notesArray":[
-            {
-                "date": "1/29/19",
-                "notes": "1. Exercise: keep on working on steadiness. Jingle Bells, pg 30 of book"
-            }
-        ]
-      },
-      {
-        "name": "Alyson Trudan",
-        "instrument": "Guitar",
-        "home": "true",
-        "lesson-length" : 30,
-        "payments": [
-            {
-                "date": "1/30/19",
-                "method": "venmo",
-                "amount": 30
-            }
-        ],
-        "notesArray":[
-            {
-                "date": "1/29/19",
-                "notes": "1. Exercise: keep on working on steadiness. Jingle Bells, pg 30 of book"
-            }
-        ]
-      }
-
-    ]
-  }
+  "students": [
+    {
+      "name": "Kristi McCoromack",
+      "phoneNumber": "(615) 308-6062",
+      "instrument": "Piano",
+      "lessonLocation": "Home",
+      "lessonLength": "45",
+      "payments": [
+        {
+          "date": "fxv",
+          "method": "ndl",
+          "amount": "sdc",
+          "id" : 1
+        }
+      ],
+      "notesArray": [
+        {
+          "date": null,
+          "notes": null
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Rudi Wilhoite",
+      "phoneNumber": "(317) 752-3814",
+      "instrument": "Piano",
+      "lessonLocation": "Home",
+      "lessonLength": "45",
+      "payments": [
+        {
+          "date": null,
+          "method": null,
+          "amount": null
+        }
+      ],
+      "notesArray": [
+        {
+          "date": null,
+          "notes": null
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Nathan Swift",
+      "phoneNumber": "(615) 975-1895",
+      "instrument": "Piano",
+      "lessonLocation": "Home",
+      "lessonLength": "60",
+      "payments": [
+        {
+          "date": null,
+          "method": null,
+          "amount": null
+        }
+      ],
+      "notesArray": [
+        {
+          "date": null,
+          "notes": null
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Netty Leach",
+      "phoneNumber": "(615) 589-2223",
+      "instrument": "Piano",
+      "lessonLocation": "Home",
+      "lessonLength": "30",
+      "payments": [
+        {
+          "date": null,
+          "method": null,
+          "amount": null
+        }
+      ],
+      "notesArray": [
+        {
+          "date": null,
+          "notes": null
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Jake Wehrly",
+      "phoneNumber": "(614) 365-1309",
+      "instrument": "Piano",
+      "lessonLocation": "Home",
+      "lessonLength": "45",
+      "payments": [
+        {
+          "date": null,
+          "method": null,
+          "amount": null
+        }
+      ],
+      "notesArray": [
+        {
+          "date": null,
+          "notes": null
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "asef",
+      "phoneNumber": "asdsa",
+      "instrument": "Piano",
+      "lessonLocation": "Home",
+      "lessonLength": "asd",
+      "payments": [
+        {
+          "date": null,
+          "method": null,
+          "amount": null
+        }
+      ],
+      "notesArray": [
+        {
+          "date": null,
+          "notes": null
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "Alyson Trudan",
+      "phoneNumber": "(484) 574-5135",
+      "instrument": "Guitar",
+      "lessonLocation": "Home",
+      "lessonLength": "30",
+      "payments": [
+        {
+          "date": null,
+          "method": null,
+          "amount": null
+        }
+      ],
+      "notesArray": [
+        {
+          "date": null,
+          "notes": null
+        }
+      ],
+      "id": 7
+    }
+  ]
+}

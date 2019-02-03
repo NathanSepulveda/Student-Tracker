@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
-        <div>
-                <fieldset>
-                  <label for="students">STUDENTS:</label>
-                  <select id="people">
-                      
-                  </select>
-                </fieldset>
-                <button id="selectBtn" class="btn people">
-                  See Student Info
-                </button>
-              </div>
-            <div class="studentInfo"></div>
+    <div>
+        <fieldset>
+            <label for="students">STUDENTS:</label>
+            <select id="people">
+
+            </select>
+        </fieldset>
+        <button id="selectBtn" class="btn btn-info people">
+            See Student Info
+        </button>
+    </div>
+    <button type="button" id="recordLessonNotes">Add Lesson Notes</button>
+    <div class="studentInfo"></div>
+    <form>
+        <option value="Student Home">Student Home</option>
+        <!-- <fieldset>
+                <label for="lessonDate">Date of Lesson</label>
+                <input type="date" name="lessonDate" id="lessonDate">
+            </fieldset> -->
+        <fieldset>
+            <label for="studentName">Student Name</label>
+            <input type="text" name="studentName" id="studentName">
+        </fieldset>
+        <fieldset>
+            <label for="studentPhoneNumber">Phone Number</label>
+            <input type="text" name="studentPhoneNumber" id="studentPhoneNumber">
+        </fieldset>
+        <fieldset>
+            <label for="lessonLength">Lesson Length</label>
+            <input type="text" name="lessonLength" id="lessonLength">
+        </fieldset>
+        <fieldset>
+            <label for="lessonLocation">Location</label>
+            <select id="location">
+                <option value="Home">Home</option>
+                <option value="Ryan's Studio">Studio</option>
+                <option value="Video">Video Lesson</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label for="studentInstrument">Instrument</label>
+            <select id="instrument">
+                <option value="Piano">Piano</option>
+                <option value="Guitar">Guitar</option>
+                <option value="Uke">Uke</option>
+                <option value="Bass">Bass</option>
+            </select>
+        </fieldset>
+        <!-- <button id="addBtn" class="btn people"> -->
+    </form>
+    <form id="newNoteDisplay" style.display="hidden">
+        <fieldset>
+            <label for="studentName">Student Name</label>
+            <input type="text" name="studentName" id="studentName">
+        </fieldset>
+        <fieldset>
+            <label for="lessonDate">Lesson Date</label>
+            <input type="text" name="lessonDate" id="lessonDate">
+        </fieldset>
+        <button type="button" id="postNewStudent">Add New Student</button>
+
+    </form>
+    </button>
     <script src="script.js"></script>
     <script src="studentdisplay.js"></script>
+    <script src="addStudent.js"></script>
 </body>
+
 </html>

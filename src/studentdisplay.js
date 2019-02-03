@@ -20,12 +20,9 @@ let createStudentInfoViewer = (student) => {
     let html = `
     <h1>${student.name}</h1>
     <h2>${student.instrument}</h2>
-    <h2>${parseInt(student["lesson-length"])}</h2>
+    <h2>${parseInt(student.lessonLength)} Minute Lessons</h2>
     <h2>Date of Last Lesson ${student.notesArray[0].date}</h2>
     <h2>Notes ${student.notesArray[0].notes}</h2>
-
-    
-    
     `
     viewStudentInfo.innerHTML = html
     
@@ -33,6 +30,7 @@ let createStudentInfoViewer = (student) => {
 }
     //display student info
 document.querySelector("#selectBtn").addEventListener("click", event => {
+    document.querySelector("#newNoteDisplay").getElementsByClassName.display = "show"
     // console.log("I was clicked")
     let selectedName = document.querySelector("#people").value
     console.log(`Hello ${selectedName}!`)
