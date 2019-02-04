@@ -12,21 +12,7 @@ document.querySelector("#postNewStudent").addEventListener("click", event => {
         phoneNumber: phoneNumber,
         instrument: instrument,
         lessonLocation: lessonLocation,
-        lessonLength: lessonLength,
-        payments: [
-            {
-                date: null,
-                method: null,
-                amount: null
-            }
-        ],
-        notesArray:[
-            {
-                date: null,
-                notes: null
-            }
-        
-        ]
+        lessonLength: lessonLength
     };
     fetch( `http://localhost:3000/students`, {
     method: 'POST', // or 'PUT'

@@ -6,20 +6,6 @@
       "instrument": "Piano",
       "lessonLocation": "Home",
       "lessonLength": "45",
-      "payments": [
-        {
-          "date": "fxv",
-          "method": "ndl",
-          "amount": "sdc",
-          "id" : 1
-        }
-      ],
-      "notesArray": [
-        {
-          "date": null,
-          "notes": null
-        }
-      ],
       "id": 1
     },
     {
@@ -28,19 +14,6 @@
       "instrument": "Piano",
       "lessonLocation": "Home",
       "lessonLength": "45",
-      "payments": [
-        {
-          "date": null,
-          "method": null,
-          "amount": null
-        }
-      ],
-      "notesArray": [
-        {
-          "date": null,
-          "notes": null
-        }
-      ],
       "id": 2
     },
     {
@@ -49,104 +22,79 @@
       "instrument": "Piano",
       "lessonLocation": "Home",
       "lessonLength": "60",
-      "payments": [
-        {
-          "date": null,
-          "method": null,
-          "amount": null
-        }
-      ],
-      "notesArray": [
-        {
-          "date": null,
-          "notes": null
-        }
-      ],
       "id": 3
+    }
+  ],
+  "payments": [
+    {
+      "studentId": 1,
+      "studentName": "Kristi McCormack",
+      "paymentDetails": [
+        {
+          "id": 1,
+          "date": "1/29/19",
+          "amount": 45,
+          "method": "cash"
+        },
+        {
+          "id": 2,
+          "date": "1/12/19",
+          "amount": 45,
+          "method": "cash"
+        }
+      ]
     },
     {
-      "name": "Netty Leach",
-      "phoneNumber": "(615) 589-2223",
-      "instrument": "Piano",
-      "lessonLocation": "Home",
-      "lessonLength": "30",
-      "payments": [
+      "studentId": 2,
+      "studentName": "Rudi Wilhoite",
+      "paymentDetails": [
         {
-          "date": null,
-          "method": null,
-          "amount": null
-        }
-      ],
-      "notesArray": [
+          "paymentId": 1,
+          "date": "1/29/19",
+          "amount": 45,
+          "method": "venmo"
+        },
         {
-          "date": null,
-          "notes": null
+          "paymentId": 2,
+          "date": "2/5/19",
+          "amount": 45,
+          "method": "cash"
         }
-      ],
-      "id": 4
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "studentId": 1,
+      "studentName": "Kristi McCormack",
+      "notesDetails": [
+        {
+          "noteId": 1,
+          "date": "1/29/19",
+          "note": "stuff and stuff"
+        },
+        {
+          "noteId": 2,
+          "date": "1/22/19",
+          "note": "stuff and others"
+        }
+      ]
     },
     {
-      "name": "Jake Wehrly",
-      "phoneNumber": "(614) 365-1309",
-      "instrument": "Piano",
-      "lessonLocation": "Home",
-      "lessonLength": "45",
-      "payments": [
+      "studentId": 2,
+      "studentName": "Rudi Wilhoite",
+      "notesDetails": [
         {
-          "date": null,
-          "method": null,
-          "amount": null
-        }
-      ],
-      "notesArray": [
+          "noteId": 1,
+          "date": "1/29/19",
+          "note": "stuff and stuff"
+        },
         {
-          "date": null,
-          "notes": null
+          "noteId": 2,
+          "date": "1/29/19",
+          "note": "stuff and things y0"
         }
-      ],
-      "id": 5
-    },
-    {
-      "name": "asef",
-      "phoneNumber": "asdsa",
-      "instrument": "Piano",
-      "lessonLocation": "Home",
-      "lessonLength": "asd",
-      "payments": [
-        {
-          "date": null,
-          "method": null,
-          "amount": null
-        }
-      ],
-      "notesArray": [
-        {
-          "date": null,
-          "notes": null
-        }
-      ],
-      "id": 6
-    },
-    {
-      "name": "Alyson Trudan",
-      "phoneNumber": "(484) 574-5135",
-      "instrument": "Guitar",
-      "lessonLocation": "Home",
-      "lessonLength": "30",
-      "payments": [
-        {
-          "date": null,
-          "method": null,
-          "amount": null
-        }
-      ],
-      "notesArray": [
-        {
-          "date": null,
-          "notes": null
-        }
-      ],
-      "id": 7
+      ]
     }
   ]
 }

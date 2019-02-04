@@ -18,11 +18,11 @@ let createStudentInfoViewer = (student) => {
     // let dateOfLastLesson = student.notesArray[0]
     
     let html = `
+    <div id=${student.id}>
     <h1>${student.name}</h1>
     <h2>${student.instrument}</h2>
     <h2>${parseInt(student.lessonLength)} Minute Lessons</h2>
-    <h2>Date of Last Lesson ${student.notesArray[0].date}</h2>
-    <h2>Notes ${student.notesArray[0].notes}</h2>
+    </div>
     `
     viewStudentInfo.innerHTML = html
     

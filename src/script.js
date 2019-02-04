@@ -5,13 +5,13 @@ fetch(`http://localhost:3000/students`)
              for (let i = 0; i < studentInfo.length; i++) {
                 let studentName = studentInfo[i].name
                 let studentInstrument = studentInfo[i].instrument
-                let latestNoteNumber = studentInfo[i].notesArray.length - 1
-                let latestNote = studentInfo[i].notesArray[latestNoteNumber].notes
-                let latestPaymentNumber = studentInfo[i].payments.length - 1
-                let latestPayment = studentInfo[i].payments[latestPaymentNumber].amount
-                // console.log(latestNoteNumber)
-                // let latestNote = studentInfo[i].notesArray[latestNoteNumber]
-                console.log(studentName, studentInstrument, latestNote, latestPayment)
+               //  let latestNoteNumber = studentInfo[i].notesArray.length - 1
+               //  let latestNote = studentInfo[i].notesArray[latestNoteNumber].notes
+               //  let latestPaymentNumber = studentInfo[i].payments.length - 1
+               //  let latestPayment = studentInfo[i].payments[latestPaymentNumber].amount
+               //  // console.log(latestNoteNumber)
+               //  // let latestNote = studentInfo[i].notesArray[latestNoteNumber]
+               //  console.log(studentName, studentInstrument, latestNote, latestPayment)
                 // let type = restInfo.restaurants[i].restaurant.cuisines;
                 // let cost = restInfo.restaurants[i].restaurant.average_cost_for_two;
                 // let location = restInfo.restaurants[i].restaurant.location.locality
