@@ -52,6 +52,20 @@
     "payments": [
       {
         "studentId": 1,
+        "id": 1,
+        "date": "1/29/19",
+        "amount": 45,
+        "method": "cash"
+      },
+      {
+        "studentId": 1,
+        "id": 2,
+        "date": "1/29/19",
+        "amount": 45,
+        "method": "credit"
+      },
+      {
+        "studentId": 1,
         "studentName": "Kristi McCormack",
         "paymentDetails": [
           {
