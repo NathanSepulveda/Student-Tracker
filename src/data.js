@@ -2,6 +2,7 @@ let studentUrl = `  http://localhost:3000/students`
 let instrumentUrl = `http://localhost:3000/instruments`
 let lengthUrl = `http://localhost:3000/lengths`
 let paymentMethodsUrl = `http://localhost:3000/paymentMethods`
+let notesUrl = `http://localhost:3000/notes`
 const studentAPI = {
 
     getStudentNames() {
@@ -18,5 +19,8 @@ const studentAPI = {
     },
     getTimebyId(id) {
         return fetch(`${lengthUrl}/${id}`).then(response => response.json())
+    },
+    getStudentNotes() {
+        return fetch(notesUrl).then(response => response.json())
     }
 }
