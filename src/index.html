@@ -31,9 +31,13 @@
                 <label for="studentName">Student Name</label>
                 <input type="text" name="studentName" id="studentNameNote">
             </fieldset>
-            <fieldset>
+            <!-- <fieldset>
                 <label for="lessonDate">Lesson Date</label>
                 <input type="text" name="lessonDate" id="lessonDate">
+            </fieldset> -->
+            <fieldset>
+                <label for="lessonDate">Lesson Date</label>
+                <input type="date" name="lessonDate" id="lessonDate">
             </fieldset>
         </form>
         <textarea id="notesInput"></textarea>
@@ -46,13 +50,17 @@
                 <label for="studentName">Student Name</label>
                 <input type="text" name="studentName" id="studentNamePayment">
             </fieldset>
-            <fieldset>
+            <!-- <fieldset>
                 <label for="paymentDate">Payment Date</label>
                 <input type="text" name="paymentDate" id="paymentDate">
+            </fieldset> -->
+            <fieldset>
+                <label for="paymentDate">Payment Date</label>
+                <input type="date" name="paymentDate" id="paymentDate">
             </fieldset>
             <fieldset>
                 <label for="paymentMethod">Payment Method</label>
-                <input type="text" name="paymentMethod" id="paymentMethod">
+                <select id="paymentMethod"></select>
             </fieldset>
             <fieldset>
                 <label for="paymentAmount">Payment Amount</label>
@@ -120,6 +128,7 @@
     <script src="script.js"></script>
     <script src="data.js"></script>
     <script src="studentdisplay.js"></script>
+    <script src="addPayment.js"></script>
     <script src="addStudent.js"></script>
     <script src="addLessonNotes.js"></script>
 </body>

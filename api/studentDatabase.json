@@ -98,6 +98,50 @@
       "lengthId": "2",
       "parentId": null,
       "id": 9
+    },
+    {
+      "name": "ASc",
+      "phoneNumber": "asda",
+      "typicalLessonDay": "asd",
+      "typicalLessonTime": "asda",
+      "instrumentId": "1",
+      "locationId": "1",
+      "lengthId": "1",
+      "parentId": null,
+      "id": 10
+    },
+    {
+      "name": "ASc",
+      "phoneNumber": "asda",
+      "typicalLessonDay": "asd",
+      "typicalLessonTime": "asda",
+      "instrumentId": "1",
+      "locationId": "1",
+      "lengthId": "1",
+      "parentId": null,
+      "id": 11
+    },
+    {
+      "name": "ASc",
+      "phoneNumber": "asda",
+      "typicalLessonDay": "asd",
+      "typicalLessonTime": "asda",
+      "instrumentId": "1",
+      "locationId": "1",
+      "lengthId": "1",
+      "parentId": null,
+      "id": 12
+    },
+    {
+      "name": "new student",
+      "phoneNumber": "ads",
+      "typicalLessonDay": "asD",
+      "typicalLessonTime": "ASDasa",
+      "instrumentId": "1",
+      "locationId": "1",
+      "lengthId": "1",
+      "parentId": null,
+      "id": 13
     }
   ],
   "instruments": [
@@ -157,19 +201,19 @@
   "payments": [
     {
       "studentId": 1,
-      "parentId" : null,
+      "parentId": null,
       "id": 1,
       "date": "1/29/19",
       "amount": 45,
-      "method": "cash"
+      "methodId": 1
     },
     {
       "studentId": 2,
-      "parentId" : 1,
+      "parentId": 1,
       "id": 2,
       "date": "1/29/19",
       "amount": 45,
-      "method": "credit"
+      "methodId": 3
     }
   ],
   "notes": [
@@ -196,6 +240,24 @@
       "date": "1234",
       "note": "John is lame",
       "id": 4
+    },
+    {
+      "studentId": "3",
+      "date": "2019-02-10",
+      "note": "Make up lesson",
+      "id": 5
+    },
+    {
+      "studentId": "5",
+      "date": "",
+      "note": "zxZXCz",
+      "id": 6
+    },
+    {
+      "studentId": "7",
+      "date": "2019-02-10",
+      "note": "new notes",
+      "id": 7
     }
   ],
   "parents": [
@@ -214,6 +276,20 @@
       "typicalLessonDay": "Monday",
       "typicalLessonTime": "16:45",
       "lessonLocation": 2
+    }
+  ],
+  "paymentMethods": [
+    {
+      "id": 1,
+      "method": "cash"
+    },
+    {
+      "id": 2,
+      "method": "check"
+    },
+    {
+      "id": 3,
+      "method": "electronic payment"
     }
   ]
 }
