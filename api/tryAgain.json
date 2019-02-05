@@ -1,0 +1,124 @@
+{
+    "students": [
+      {
+        "name": "Kristi McCoromack",
+        "phoneNumber": "(615) 308-6062",
+        "instrument": "Piano",
+        "lessonLocation": "Home",
+        "lessonLength": "45",
+        "id": 1
+      },
+      {
+        "name": "Rudi Wilhoite",
+        "phoneNumber": "(317) 752-3814",
+        "instrument": "Piano",
+        "lessonLocation": "Home",
+        "lessonLength": "45",
+        "id": 2
+      },
+      {
+        "name": "Nathan Swift",
+        "phoneNumber": "(615) 975-1895",
+        "instrument": "Piano",
+        "lessonLocation": "Home",
+        "lessonLength": "60",
+        "id": 3
+      },
+      {
+        "name": "Netty Leach",
+        "phoneNumber": "(615) 589-2223",
+        "instrument": "Piano",
+        "lessonLocation": "Home",
+        "lessonLength": "30",
+        "id": 4
+      },
+      {
+        "name": "Jake Wehrly",
+        "phoneNumber": "(614) 365-1309",
+        "instrument": "Piano",
+        "lessonLocation": "Home",
+        "lessonLength": "45",
+        "id": 5
+      },
+      {
+        "name": "Alyson Trudan",
+        "phoneNumber": "(484) 574-5135",
+        "instrument": "Guitar",
+        "lessonLocation": "Home",
+        "lessonLength": "30",
+        "id": 6
+      }
+    ],
+    "payments": [
+      {
+        "studentId": 1,
+        "studentName": "Kristi McCormack",
+        "paymentDetails": [
+          {
+            "id": 1,
+            "date": "1/29/19",
+            "amount": 45,
+            "method": "cash"
+          },
+          {
+            "id": 2,
+            "date": "1/12/19",
+            "amount": 45,
+            "method": "cash"
+          }
+        ]
+      },
+      {
+        "studentId": 2,
+        "studentName": "Rudi Wilhoite",
+        "paymentDetails": [
+          {
+            "paymentId": 1,
+            "date": "1/29/19",
+            "amount": 45,
+            "method": "venmo"
+          },
+          {
+            "paymentId": 2,
+            "date": "2/5/19",
+            "amount": 45,
+            "method": "cash"
+          }
+        ]
+      }
+    ],
+    "notes": [
+      {
+        "studentId": 1,
+        "studentName": "Kristi McCormack",
+        "notesDetails": [
+          {
+            "noteId": 1,
+            "date": "1/29/19",
+            "note": "stuff and stuff"
+          },
+          {
+            "noteId": 2,
+            "date": "1/22/19",
+            "note": "stuff and others"
+          }
+        ]
+      },
+      {
+        "studentId": 2,
+        "studentName": "Rudi Wilhoite",
+        "notesDetails": [
+          {
+            "noteId": 1,
+            "date": "1/29/19",
+            "note": "stuff and stuff"
+          },
+          {
+            "noteId": 2,
+            "date": "1/29/19",
+            "note": "stuff and things y0"
+          }
+        ]
+      }
+    ]
+  }

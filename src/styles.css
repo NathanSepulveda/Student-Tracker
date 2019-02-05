@@ -1,0 +1,10 @@
+.sections {
+    border: 1px solid burlywood;
+    padding: 20px;
+    width: 25%;
+}
+body {
+    display: flex;
+    height: 100%
+
+}

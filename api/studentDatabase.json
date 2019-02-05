@@ -3,98 +3,246 @@
     {
       "name": "Kristi McCoromack",
       "phoneNumber": "(615) 308-6062",
-      "instrument": "Piano",
-      "lessonLocation": "Home",
-      "lessonLength": "45",
+      "typicalLessonDay": "Saturday",
+      "typicalLessonTime": 10,
+      "instrumentId": 1,
+      "locationId": 1,
+      "lengthId": 2,
+      "parentId": null,
       "id": 1
     },
     {
       "name": "Rudi Wilhoite",
       "phoneNumber": "(317) 752-3814",
-      "instrument": "Piano",
-      "lessonLocation": "Home",
-      "lessonLength": "45",
+      "typicalLessonDay": "Tuesday",
+      "typicalLessonTime": "18:15",
+      "instrumentId": 1,
+      "locationId": 1,
+      "lengthId": 2,
+      "parentId": null,
       "id": 2
     },
     {
       "name": "Nathan Swift",
       "phoneNumber": "(615) 975-1895",
-      "instrument": "Piano",
-      "lessonLocation": "Home",
-      "lessonLength": "60",
+      "typicalLessonDay": "Sunday",
+      "typicalLessonTime": "18:15",
+      "instrumentId": 1,
+      "locationId": 1,
+      "lengthId": 3,
+      "parentId": null,
       "id": 3
+    },
+    {
+      "name": "Abri Collins",
+      "phoneNumber": null,
+      "typicalLessonDay": null,
+      "typicalLessonTime": null,
+      "instrumentId": 2,
+      "locationId": null,
+      "lengthId": 1,
+      "parentId": 1,
+      "id": 4
+    },
+    {
+      "name": "Isaiah Collins",
+      "phoneNumber": null,
+      "typicalLessonDay": null,
+      "typicalLessonTime": null,
+      "instrumentId": 1,
+      "locationId": null,
+      "lengthId": 1,
+      "parentId": 1,
+      "id": 5
+    },
+    {
+      "name": "Henry Thurman",
+      "phoneNumber": null,
+      "typicalLessonDay": null,
+      "typicalLessonTime": null,
+      "instrumentId": 1,
+      "locationId": null,
+      "lengthId": 1,
+      "parentId": 2,
+      "id": 6
+    },
+    {
+      "name": "Mack Thurman",
+      "phoneNumber": null,
+      "typicalLessonDay": null,
+      "typicalLessonTime": null,
+      "instrumentId": 1,
+      "locationId": null,
+      "lengthId": 1,
+      "parentId": 2,
+      "id": 7
+    },
+    {
+      "name": "Sponge",
+      "phoneNumber": "123",
+      "typicalLessonDay": "12",
+      "typicalLessonTime": "12",
+      "instrumentId": "1",
+      "locationId": "1",
+      "lengthId": "1",
+      "parentId": null,
+      "id": 8
+    }
+  ],
+  "instruments": [
+    {
+      "id": 1,
+      "name": "Piano"
+    },
+    {
+      "id": 2,
+      "name": "Guitar"
+    },
+    {
+      "id": 3,
+      "name": "Bass"
+    },
+    {
+      "id": 4,
+      "name": "Ukulele"
+    },
+    {
+      "id": 5,
+      "name": "Music Tech"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "location": "Home Studio"
+    },
+    {
+      "id": 2,
+      "location": "Student Home"
+    },
+    {
+      "id": 3,
+      "location": "Video Lesson"
+    }
+  ],
+  "lengths": [
+    {
+      "id": 1,
+      "length": 30
+    },
+    {
+      "id": 2,
+      "length": 45
+    },
+    {
+      "id": 3,
+      "length": 60
+    },
+    {
+      "id": 4,
+      "length": "greater than 60"
     }
   ],
   "payments": [
     {
       "studentId": 1,
-      "studentName": "Kristi McCormack",
-      "paymentDetails": [
-        {
-          "id": 1,
-          "date": "1/29/19",
-          "amount": 45,
-          "method": "cash"
-        },
-        {
-          "id": 2,
-          "date": "1/12/19",
-          "amount": 45,
-          "method": "cash"
-        }
-      ]
+      "id": 1,
+      "date": "1/29/19",
+      "amount": 45,
+      "method": "cash"
     },
     {
       "studentId": 2,
-      "studentName": "Rudi Wilhoite",
-      "paymentDetails": [
-        {
-          "paymentId": 1,
-          "date": "1/29/19",
-          "amount": 45,
-          "method": "venmo"
-        },
-        {
-          "paymentId": 2,
-          "date": "2/5/19",
-          "amount": 45,
-          "method": "cash"
-        }
-      ]
+      "id": 2,
+      "date": "1/29/19",
+      "amount": 45,
+      "method": "credit"
     }
   ],
   "notes": [
     {
       "studentId": 1,
-      "studentName": "Kristi McCormack",
-      "notesDetails": [
-        {
-          "noteId": 1,
-          "date": "1/29/19",
-          "note": "stuff and stuff"
-        },
-        {
-          "noteId": 2,
-          "date": "1/22/19",
-          "note": "stuff and others"
-        }
-      ]
+      "date": "1/29/19",
+      "note": "keep up the good work!",
+      "id": 1
     },
     {
       "studentId": 2,
-      "studentName": "Rudi Wilhoite",
-      "notesDetails": [
-        {
-          "noteId": 1,
-          "date": "1/29/19",
-          "note": "stuff and stuff"
-        },
-        {
-          "noteId": 2,
-          "date": "1/29/19",
-          "note": "stuff and things y0"
-        }
-      ]
+      "date": "1/29/19",
+      "note": "keep up the great work!",
+      "id": 2
+    },
+    {
+      "studentId": "6",
+      "date": "2/4/19",
+      "note": "Henry was struggling with reading his rhythms yesterday. ",
+      "id": 3
+    },
+    {
+      "studentId": "1",
+      "date": "SD",
+      "note": "DZSDC",
+      "id": 4
+    },
+    {
+      "studentId": "1",
+      "date": "today",
+      "note": "dsasd",
+      "id": 5
+    },
+    {
+      "studentId": "4",
+      "date": "today",
+      "note": "dsasd",
+      "id": 6
+    },
+    {
+      "studentId": "1",
+      "date": "",
+      "note": "",
+      "id": 7
+    },
+    {
+      "studentId": "Isaiah Collins",
+      "date": "asd",
+      "note": "dc",
+      "id": 8
+    },
+    {
+      "studentId": "people",
+      "date": "",
+      "note": "stuff",
+      "id": 9
+    },
+    {
+      "studentId": "people",
+      "date": "",
+      "note": "",
+      "id": 10
+    },
+    {
+      "studentId": "1",
+      "date": "2/3/12",
+      "note": "sdhsdskduiub",
+      "id": 11
+    }
+  ],
+  "parents": [
+    {
+      "id": 1,
+      "name": "Tracy Collins",
+      "phoneNumber": "(773) 350-6741",
+      "typicalLessonDay": "Thursday",
+      "typicalLessonTime": "17:15",
+      "lessonLocation": 1
+    },
+    {
+      "id": 2,
+      "name": "Danielle Keegan",
+      "phoneNumber": "(615) 881-0180",
+      "typicalLessonDay": "Monday",
+      "typicalLessonTime": "16:45",
+      "lessonLocation": 2
     }
   ]
 }
