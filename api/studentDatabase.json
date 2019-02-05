@@ -157,6 +157,7 @@
   "payments": [
     {
       "studentId": 1,
+      "parentId" : null,
       "id": 1,
       "date": "1/29/19",
       "amount": 45,
@@ -164,6 +165,7 @@
     },
     {
       "studentId": 2,
+      "parentId" : 1,
       "id": 2,
       "date": "1/29/19",
       "amount": 45,
