@@ -15,7 +15,7 @@ studentAPI.getStudentNames()
 let viewStudentInfo = document.querySelector(".studentInfo")
 let createStudentInfoViewer = (student, instrument, length) => {
     // let dateOfLastLesson = student.notesArray[0]
-    
+
     let html = `
     <div class="studentDisplay" id=${student.id}>
     <h1>${student.name}</h1>
@@ -30,24 +30,31 @@ document.querySelector("#selectBtn").addEventListener("click", event => {
 
     let selectedNameId = document.querySelector("#people").value
     console.log(selectedNameId)
+    instrumentId = ""
+    let lengthId = ""
+    let studentInfos = ""
+    let theInstrument = ""
     studentAPI.showStudentInfo(selectedNameId)
-    .then(studentInfo => { 
-        console.log(studentInfo)
-        let instrumentId = studentInfo.instrumentId
-        console.log(instrumentId)
-        let lengthId = studentInfo.lengthId
-        console.log(lengthId)
-        // let instrumentName = 
-        studentAPI.getInstrumentNamebyId(instrumentId).then(instrument => {
-    
-            let theInstrument = instrument.name
-            console.log(theInstrument)
-            studentAPI.getTimebyId(lengthId).then(length => {
-                let theLength = length.length
-                createStudentInfoViewer(studentInfo, theInstrument, theLength)
+        .then(studentInfo => {
+            studentInfos = studentInfo
+            // console.log(studentInfo)
+            instrumentId = studentInfo.instrumentId
+            // console.log(instrumentId)
+            lengthId = studentInfo.lengthId
+            // console.log(lengthId)
+            // let instrumentName = 
+
+        }).then(() => {
+            studentAPI.getInstrumentNamebyId(instrumentId).then(instrument => {
+
+                theInstrument = instrument.name
+                console.log(theInstrument)
+                studentAPI.getTimebyId(lengthId).then(length => {
+                    let theLength = length.length
+                    createStudentInfoViewer(studentInfos, theInstrument, theLength)
+                })
             })
         })
-    })
     // console.log(instrumentName)
     console.log(`Hello ${selectedNameId}!`)
     // let name = studentInfo.name
@@ -57,29 +64,29 @@ document.querySelector("#selectBtn").addEventListener("click", event => {
     //     .then(studentInfo => {
     //         // viewStudentInfo = ""
     //         console.table(studentInfo)
-            // fetch(`http://localhost:3000/instruments/${instrumentId}`)
-            //     .then(response => response.json())
-            //     .then(instrument => {
-            //         console.log(instrument.name)
-            //     })
-            // let id = studentInfo[0].id
-            // console.log(id)
-            // fetch(`http://localhost:3000/students/${id}/notes`)
-            //     .then(response => response.json())
-            //     .then(notes => {
-            //         // console.log( notes[0].notesDetails[0].note )
-            //         if (notes[0] === undefined) {
-            //             recentNotes = "no notes yet!"
-            //             // createStudentInfoViewer(studentInfo[0], recentNotes)
-            //         } else if (notes[0].notesDetails[0].note !== "") {
-            //             console.log(notes[0].notesDetails[0].note)
-            //             recentNotes = notes[0].notesDetails[0].note
-            //         }
-            //         createStudentInfoViewer(studentInfo[0], recentNotes)
-            //     })
-            // console.log(studentInfo[0].notes.notesDetails)
+    // fetch(`http://localhost:3000/instruments/${instrumentId}`)
+    //     .then(response => response.json())
+    //     .then(instrument => {
+    //         console.log(instrument.name)
+    //     })
+    // let id = studentInfo[0].id
+    // console.log(id)
+    // fetch(`http://localhost:3000/students/${id}/notes`)
+    //     .then(response => response.json())
+    //     .then(notes => {
+    //         // console.log( notes[0].notesDetails[0].note )
+    //         if (notes[0] === undefined) {
+    //             recentNotes = "no notes yet!"
+    //             // createStudentInfoViewer(studentInfo[0], recentNotes)
+    //         } else if (notes[0].notesDetails[0].note !== "") {
+    //             console.log(notes[0].notesDetails[0].note)
+    //             recentNotes = notes[0].notesDetails[0].note
+    //         }
+    //         createStudentInfoViewer(studentInfo[0], recentNotes)
+    //     })
+    // console.log(studentInfo[0].notes.notesDetails)
 
 
-        // })
+    // })
 
 })
