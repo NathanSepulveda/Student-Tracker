@@ -13,7 +13,7 @@ studentAPI.getStudentNames()
 
 
 let viewStudentInfo = document.querySelector(".studentInfo")
-let createStudentInfoViewer = (student, instrument, length) => {
+let createStudentInfoViewer = (student, instrument, length, day) => {
     // let dateOfLastLesson = student.notesArray[0]
 
     let html = `
@@ -21,6 +21,7 @@ let createStudentInfoViewer = (student, instrument, length) => {
     <h1>${student.name}</h1>
     <h2>${instrument}</h1>
     <h2>${length}</h1>
+    <h2>${day}</h1>
     `
     viewStudentInfo.innerHTML = html
 }
@@ -30,63 +31,24 @@ document.querySelector("#selectBtn").addEventListener("click", event => {
 
     let selectedNameId = document.querySelector("#people").value
     console.log(selectedNameId)
-    instrumentId = ""
-    let lengthId = ""
     let studentInfos = ""
     let theInstrument = ""
+    let theLength = ""
     studentAPI.showStudentInfo(selectedNameId)
         .then(studentInfo => {
             studentInfos = studentInfo
             // console.log(studentInfo)
-            instrumentId = studentInfo.instrumentId
+            theInstrument = studentInfo.instrument.name
             // console.log(instrumentId)
-            lengthId = studentInfo.lengthId
+            theLength = studentInfo.length.length
+            day = studentInfo.lessonDay.day
             // console.log(lengthId)
             // let instrumentName = 
+            createStudentInfoViewer(studentInfos, theInstrument, theLength, day)
 
-        }).then(() => {
-            studentAPI.getInstrumentNamebyId(instrumentId).then(instrument => {
-
-                theInstrument = instrument.name
-                console.log(theInstrument)
-                studentAPI.getTimebyId(lengthId).then(length => {
-                    let theLength = length.length
-                    createStudentInfoViewer(studentInfos, theInstrument, theLength)
-                })
-            })
         })
-    // console.log(instrumentName)
+
     console.log(`Hello ${selectedNameId}!`)
-    // let name = studentInfo.name
-    // fetch(`http://localhost:3000/students?name=${selectedName}`)
-    // fetch(`http://localhost:3000/students/${selectedNameId}`)
-    //     .then(response => response.json())
-    //     .then(studentInfo => {
-    //         // viewStudentInfo = ""
-    //         console.table(studentInfo)
-    // fetch(`http://localhost:3000/instruments/${instrumentId}`)
-    //     .then(response => response.json())
-    //     .then(instrument => {
-    //         console.log(instrument.name)
-    //     })
-    // let id = studentInfo[0].id
-    // console.log(id)
-    // fetch(`http://localhost:3000/students/${id}/notes`)
-    //     .then(response => response.json())
-    //     .then(notes => {
-    //         // console.log( notes[0].notesDetails[0].note )
-    //         if (notes[0] === undefined) {
-    //             recentNotes = "no notes yet!"
-    //             // createStudentInfoViewer(studentInfo[0], recentNotes)
-    //         } else if (notes[0].notesDetails[0].note !== "") {
-    //             console.log(notes[0].notesDetails[0].note)
-    //             recentNotes = notes[0].notesDetails[0].note
-    //         }
-    //         createStudentInfoViewer(studentInfo[0], recentNotes)
-    //     })
-    // console.log(studentInfo[0].notes.notesDetails)
 
-
-    // })
 
 })
