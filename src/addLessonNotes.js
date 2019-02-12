@@ -5,7 +5,8 @@ document.querySelector("#recordLessonNotes").addEventListener("click", event => 
     let title = document.querySelector("#notesTitle")
     let studentName = document.querySelector("#people").value
     // title.innerHTML = studentName
-    let studentId = document.querySelector(".studentDisplay").id
+    let stringStudentId = document.querySelector(".studentDisplay").id
+    let studentId = parseInt(stringStudentId)
     // let studentId = document.querySelector("#people").id
     console.log(studentName)
     let numericalStudentId = parseInt(studentId)

@@ -12,12 +12,12 @@ document.querySelector("#postNewStudent").addEventListener("click", event => {
     let newStudentData = {
         name: studentName,
         phoneNumber: phoneNumber,
-        typicalLessonDay: lessonDay,
-        typicalLessonTime: lessonTime,
+        lessonDayId: lessonDay,
+        lessonTime: lessonTime,
         instrumentId: instrument,
         locationId: lessonLocation,
         lengthId: lessonLength,
-        parentId: null
+        parentId: 0
     };
     // {
     //     "name": "Kristi McCoromack",

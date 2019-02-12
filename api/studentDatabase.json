@@ -3,145 +3,101 @@
     {
       "name": "Kristi McCoromack",
       "phoneNumber": "(615) 308-6062",
-      "typicalLessonDay": "Saturday",
-      "typicalLessonTime": 10,
+      "lessonDayId": 7,
+      "lessonTime": "18:15",
       "instrumentId": 1,
       "locationId": 1,
       "lengthId": 2,
-      "parentId": null,
+      "parentId": 0,
       "id": 1
     },
     {
       "name": "Rudi Wilhoite",
       "phoneNumber": "(317) 752-3814",
-      "typicalLessonDay": "Tuesday",
-      "typicalLessonTime": "18:15",
+      "lessonDayId": 3,
+      "lessonTime": "18:15",
       "instrumentId": 1,
       "locationId": 1,
       "lengthId": 2,
-      "parentId": null,
+      "parentId": 0,
       "id": 2
     },
     {
       "name": "Nathan Swift",
       "phoneNumber": "(615) 975-1895",
-      "typicalLessonDay": "Sunday",
-      "typicalLessonTime": "18:15",
+      "lessonDayId": 1,
+      "lessonTime": "18:15",
       "instrumentId": 1,
       "locationId": 1,
       "lengthId": 3,
-      "parentId": null,
+      "parentId": 0,
       "id": 3
     },
     {
       "name": "Abri Collins",
-      "phoneNumber": null,
-      "typicalLessonDay": null,
-      "typicalLessonTime": null,
+      "phoneNumber": "",
+      "lessonDayId": 5,
+      "lessonTime": "17:15",
       "instrumentId": 2,
-      "locationId": null,
+      "locationId": 1,
       "lengthId": 1,
       "parentId": 1,
       "id": 4
     },
     {
       "name": "Isaiah Collins",
-      "phoneNumber": null,
-      "typicalLessonDay": null,
-      "typicalLessonTime": null,
+      "phoneNumber": "",
+      "lessonDayId": 5,
+      "lessonTime": "17:15",
       "instrumentId": 1,
-      "locationId": null,
+      "locationId": 1,
       "lengthId": 1,
       "parentId": 1,
       "id": 5
     },
     {
       "name": "Henry Thurman",
-      "phoneNumber": null,
-      "typicalLessonDay": null,
-      "typicalLessonTime": null,
+      "phoneNumber": "",
+      "lessonDayId": 2,
+      "lessonTime": "16:45",
       "instrumentId": 1,
-      "locationId": null,
+      "locationId": 2,
       "lengthId": 1,
       "parentId": 2,
       "id": 6
     },
     {
       "name": "Mack Thurman",
-      "phoneNumber": null,
-      "typicalLessonDay": null,
-      "typicalLessonTime": null,
+      "phoneNumber": "",
+      "lessonDayId": 2,
+      "lessonTime": "16:45",
       "instrumentId": 1,
-      "locationId": null,
+      "locationId": 2,
       "lengthId": 1,
       "parentId": 2,
       "id": 7
     },
     {
-      "name": "Sponge",
-      "phoneNumber": "123",
-      "typicalLessonDay": "12",
-      "typicalLessonTime": "12",
+      "name": "bsdncasdasd",
+      "phoneNumber": "asdasd",
+      "lessonDayId": "2",
+      "lessonTime": "asd",
       "instrumentId": "1",
       "locationId": "1",
       "lengthId": "1",
-      "parentId": null,
+      "parentId": 0,
       "id": 8
     },
     {
-      "name": "John Couzins",
-      "phoneNumber": "12345",
-      "typicalLessonDay": "tuesday",
-      "typicalLessonTime": "12",
-      "instrumentId": "1",
-      "locationId": "1",
-      "lengthId": "2",
-      "parentId": null,
+      "name": "dzc",
+      "phoneNumber": "asa",
+      "lessonDayId": "1",
+      "lessonTime": "zX",
+      "instrumentId": "2",
+      "locationId": "3",
+      "lengthId": "1",
+      "parentId": 0,
       "id": 9
-    },
-    {
-      "name": "ASc",
-      "phoneNumber": "asda",
-      "typicalLessonDay": "asd",
-      "typicalLessonTime": "asda",
-      "instrumentId": "1",
-      "locationId": "1",
-      "lengthId": "1",
-      "parentId": null,
-      "id": 10
-    },
-    {
-      "name": "ASc",
-      "phoneNumber": "asda",
-      "typicalLessonDay": "asd",
-      "typicalLessonTime": "asda",
-      "instrumentId": "1",
-      "locationId": "1",
-      "lengthId": "1",
-      "parentId": null,
-      "id": 11
-    },
-    {
-      "name": "ASc",
-      "phoneNumber": "asda",
-      "typicalLessonDay": "asd",
-      "typicalLessonTime": "asda",
-      "instrumentId": "1",
-      "locationId": "1",
-      "lengthId": "1",
-      "parentId": null,
-      "id": 12
-    },
-    {
-      "name": "new student",
-      "phoneNumber": "ads",
-      "typicalLessonDay": "asD",
-      "typicalLessonTime": "ASDasa",
-      "instrumentId": "1",
-      "locationId": "1",
-      "lengthId": "1",
-      "parentId": null,
-      "id": 13
     }
   ],
   "instruments": [
@@ -198,30 +154,30 @@
       "length": "greater than 60"
     }
   ],
+  "parents": [
+    {
+      "id": 0,
+      "name": "",
+      "phoneNumber": ""
+    },
+    {
+      "id": 1,
+      "name": "Tracy Collins",
+      "phoneNumber": "(773) 350-6741"
+    },
+    {
+      "id": 2,
+      "name": "Danielle Keegan",
+      "phoneNumber": "(615) 881-0180"
+    }
+  ],
   "payments": [
     {
       "studentId": 1,
-      "parentId": null,
       "id": 1,
       "date": "1/29/19",
       "amount": 45,
       "methodId": 1
-    },
-    {
-      "studentId": 2,
-      "parentId": 1,
-      "id": 2,
-      "date": "1/29/19",
-      "amount": 45,
-      "methodId": 3
-    },
-    {
-      "studentId": "1",
-      "parentId": null,
-      "date": "2019-02-11",
-      "amount": "$45",
-      "methodId": "3",
-      "id": 3
     }
   ],
   "notes": [
@@ -272,24 +228,30 @@
       "date": "2019-02-05",
       "note": "Isaiah Did well today",
       "id": 8
-    }
-  ],
-  "parents": [
-    {
-      "id": 1,
-      "name": "Tracy Collins",
-      "phoneNumber": "(773) 350-6741",
-      "typicalLessonDay": "Thursday",
-      "typicalLessonTime": "17:15",
-      "lessonLocation": 1
     },
     {
-      "id": 2,
-      "name": "Danielle Keegan",
-      "phoneNumber": "(615) 881-0180",
-      "typicalLessonDay": "Monday",
-      "typicalLessonTime": "16:45",
-      "lessonLocation": 2
+      "studentId": "1",
+      "date": "2019-02-12",
+      "note": "poop",
+      "id": 9
+    },
+    {
+      "studentId": "5",
+      "date": "2019-02-12",
+      "note": "sdcsdcsd",
+      "id": 10
+    },
+    {
+      "studentId": "11",
+      "date": "",
+      "note": "he is lame",
+      "id": 11
+    },
+    {
+      "studentId": "1",
+      "date": "2019-02-05",
+      "note": "sdc",
+      "id": 12
     }
   ],
   "paymentMethods": [
@@ -304,6 +266,40 @@
     {
       "id": 3,
       "method": "electronic payment"
+    }
+  ],
+  "lessonDays": [
+    {
+      "id": 1,
+      "day": "Sunday"
+    },
+    {
+      "id": 2,
+      "day": "Monday"
+    },
+    {
+      "id": 3,
+      "day": "Tuesday"
+    },
+    {
+      "id": 4,
+      "day": "Wednesday"
+    },
+    {
+      "id": 5,
+      "day": "Thursday"
+    },
+    {
+      "id": 6,
+      "day": "Friday"
+    },
+    {
+      "id": 7,
+      "day": "Saturday"
+    },
+    {
+      "id": 8,
+      "day": "Sporadic"
     }
   ]
 }
