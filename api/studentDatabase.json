@@ -23,17 +23,6 @@
       "id": 2
     },
     {
-      "name": "Nathan Swift",
-      "phoneNumber": "(615) 975-1895",
-      "lessonDayId": 1,
-      "lessonTime": "18:15",
-      "instrumentId": 1,
-      "locationId": 1,
-      "lengthId": 3,
-      "parentId": 0,
-      "id": 3
-    },
-    {
       "name": "Abri Collins",
       "phoneNumber": "",
       "lessonDayId": 5,
@@ -100,15 +89,26 @@
       "id": 11
     },
     {
-      "name": "Juliet",
-      "phoneNumber": "56789",
-      "lessonDayId": "3",
-      "lessonTime": "19:30",
+      "name": "Alyson Trudan",
+      "phoneNumber": "(484) 574-5135",
+      "lessonDayId": "4",
+      "lessonTime": "5:15",
       "instrumentId": "1",
       "locationId": "1",
       "lengthId": "1",
       "parentId": 0,
       "id": 12
+    },
+    {
+      "name": "boop",
+      "phoneNumber": "aedas",
+      "lessonDayId": "3",
+      "lessonTime": "asds",
+      "instrumentId": "3",
+      "locationId": "3",
+      "lengthId": "2",
+      "parentId": 0,
+      "id": 13
     }
   ],
   "instruments": [
@@ -122,11 +122,11 @@
     },
     {
       "id": 3,
-      "name": "Bass"
+      "name": "Ukulele"
     },
     {
       "id": 4,
-      "name": "Ukulele"
+      "name": "Bass"
     },
     {
       "id": 5,
@@ -188,14 +188,14 @@
       "id": 1,
       "date": "1/29/19",
       "amount": 45,
-      "methodId": 1
+      "paymentMethodId": 1
     },
     {
       "studentId": "5",
       "parentId": null,
       "date": "2019-02-05",
       "amount": "2000000",
-      "methodId": "3",
+      "paymentMethodId": "3",
       "id": 2
     },
     {
@@ -203,8 +203,32 @@
       "parentId": null,
       "date": "2019-02-12",
       "amount": "$30",
-      "methodId": "3",
+      "paymentMethodId": "3",
       "id": 3
+    },
+    {
+      "studentId": "2",
+      "parentId": null,
+      "date": "2019-02-12",
+      "amount": "45",
+      "paymentMethodId": "3",
+      "id": 4
+    },
+    {
+      "studentId": "12",
+      "parentId": null,
+      "date": "2019-02-13",
+      "amount": "1232",
+      "paymentMethodId": "2",
+      "id": 5
+    },
+    {
+      "studentId": "12",
+      "parentId": null,
+      "date": "2019-02-13",
+      "amount": "30",
+      "paymentMethodId": "3",
+      "id": 6
     }
   ],
   "notes": [
@@ -279,6 +303,18 @@
       "date": "2019-02-12",
       "note": "1. Continue with exercises. Begin scales hands separate. Practice Jingle Bells. \n7 rings, chords are Am, F, Dm, E.",
       "id": 14
+    },
+    {
+      "studentId": "1",
+      "date": "2019-02-13",
+      "note": "check this out! https://knowledge.affectiva.com/docs/getting-started-with-the-emotion-sdk-for-javascript",
+      "id": 15
+    },
+    {
+      "studentId": "1",
+      "date": "2019-02-13",
+      "note": "https://youtu.be/Vzs4_cOnkP4",
+      "id": 16
     }
   ],
   "paymentMethods": [
