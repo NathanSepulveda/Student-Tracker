@@ -10,6 +10,9 @@ const studentAPI = {
     getStudentNames() {
         return fetch(studentUrl).then(response => response.json())
     },
+    getPaymentsbyStudentId(studentId) {
+        return fetch(`${paymentsUrl}?studentId=${studentId}&_expand=paymentMethod`).then(response => response.json())
+    },
     getPaymentMethods() {
         return fetch(paymentMethodsUrl).then(response => response.json())
     },

@@ -75,8 +75,28 @@ document.querySelector("#selectBtn").addEventListener("click", event => {
                     </div>`
                         noteHtml += html
                     })
-                }
-                createStudentInfoViewer(studentInfos, theInstrument, theLength, day, phoneNumber, noteHtml)
+                } return noteHtml
+            }).then((noteHtml)=> {
+                studentAPI.getPaymentsbyStudentId(selectedNameId).then(payments => {
+                    console.log(payments)
+                    payments = payments.reverse()
+                    let paymentHTML = ""
+                    let total = 0
+                    payments.forEach(payment => {
+                        console.log(payment.amount)
+                        total += Number(payment.amount)
+                    })
+                    payments.forEach(payment => {
+                        // total += payment.amount
+                        html = `
+                        <div class="noteView"><strong>${payment.date}</strong>  $${payment.amount} ${payment.paymentMethod.method}
+                        </div>
+                        <div>This student has payed $${total} in total</div>`
+                        paymentHTML += html
+                    })
+                    createStudentInfoViewer(studentInfos, theInstrument, theLength, day, phoneNumber, noteHtml, paymentHTML)
+
+                })
             })
         })
     console.log(`Hello ${selectedNameId}!`)
