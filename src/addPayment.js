@@ -31,7 +31,7 @@ document.querySelector("#recordStudentPayment").addEventListener("click", event 
         parentId: null,
         date: paymentDate,
         amount: paymentAmount,
-        methodId: paymentMethodId
+        paymentMethodId: paymentMethodId
     }
     console.log(studentId)
     fetch(`${paymentsUrl}/${studentId}/payments`, {

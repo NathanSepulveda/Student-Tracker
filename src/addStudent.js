@@ -38,6 +38,6 @@ document.querySelector("#postNewStudent").addEventListener("click", event => {
         }
     }).then(res => res.json())
         .then(response => console.log('Success:', JSON.stringify(response)))
-        .catch(error => console.error('Error:', error));
+        .catch(error => console.error('Error:', error)).then(populateDropdown);
 })
 
